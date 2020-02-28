@@ -1,7 +1,12 @@
+todo list 0: 拿到美国区开发者账号后，
+登陆https://appleid.apple.com/
+索取验证码
+进入后，点击安全 -> 添加受信任的电话号码
+
 todo list 1: 美国区白包
-1.1 退出developer.apple.com上中国区的开发者账号
-    退出itunesconnect
-    退出xcode上的开发者账号
+1.1 退出developer.apple.com上中国区的开发者账号 developer.apple.com/account/ios/profile/limited/create
+    退出itunesconnect  https://itunesconnect.apple.com/
+    退出xcode上的开发者账号（xcode一直不用登陆开发者）
 
 1.2 创建证书
     1.打开钥匙串，创建csr文件（从证书颁发机构获取证书）
@@ -32,7 +37,8 @@ todo list 1: 美国区白包
 
 1.9 准备数据，实现第一个界面 
 
-2.0 上传时，在xcode上登陆美国开发者账号，需要用app专用密码登陆才行
+2.0 上传时，不用XCODE，使用Application uploder，但是需要用app专用密码登陆才行
+    Xcode不用登陆开发者账号，使用distribution provisoning file就行
 
 2.1 8种语言本地化
 英文美国
@@ -68,18 +74,17 @@ Arab Alpha - It is an Arabic alphabet learning software. For those who are inter
 
 git init 
 
-git status 
-
 git add --all
 
-git status 
+git commit -m 'iOS 美国区白包1 Arab Alpha 第一次提交'
 
-git commit -m 'iOS 帅哥外语app 第一次提交'
-
-git remote add origin https://github.com/ixixii/iOS_APP_Shuaige_Waiyu.git
+git remote add origin https://github.com/ixixii/iOS_APP_MeiGuo_Arab_Alpha.git
 git push -u origin master
 
-git pull origin master
-git push origin master
+// git pull origin master
+// git push origin master
 
 刷新一下网页,看一下效果
+
+2.3 注销appleid， xcode， developer.apple.com
+    准备登陆下一个账号，写第2个美国区白包
